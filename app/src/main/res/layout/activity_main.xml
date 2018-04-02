@@ -2,44 +2,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    android:id="@+id/linear"
+    android:orientation="vertical"
     tools:context="com.lynn.rockerview.MainActivity">
 
-   <com.lynn.rockerview.RockerView
-       android:id="@+id/my_rocker"
-       android:layout_width="200dp"
-       android:layout_height="200sp"
-       app:areaBackground="@mipmap/area_bg"
-       app:rockerBackground="@mipmap/rocker_bg"
-       app:rockerSpeedLevel="10"
-       app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
-       app:rockerScale="0.5" />
+    <com.lynn.rockerview.RockerView
 
-   <TextView
-       android:id="@+id/tv_now_shake"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="当前方向：" />
+        android:id="@+id/my_rocker"
+        android:layout_width="200dp"
+        android:layout_height="200sp"
+        app:areaBackground="@mipmap/area_bg"
+        app:rockerBackground="@mipmap/rocker_bg"
+        app:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+        app:rockerScale="0.5"
+        app:rockerSpeedLevel="10" />
 
-   <TextView
-       android:id="@+id/tv_now_angle"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="当前角度：" />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linear2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center_horizontal|center_vertical">-->
 
-   <TextView
-       android:id="@+id/tv_now_level"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="当前偏移级别：" />
 
-   <TextView
-       android:id="@+id/tv_now_model"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="当前设置模式：" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_now_shake"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="当前方向：" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_now_angle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="当前角度：" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_now_level"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="当前偏移级别：" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_now_model"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="当前设置模式：" />-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_test"-->
+            <!--android:text="測試"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+
+    <!--</LinearLayout>-->
+
+
 </LinearLayout>
